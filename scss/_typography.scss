@@ -26,6 +26,9 @@ h1 {
     font-weight: 500;
     line-height: 75px;
     color: $clr-white;
+    @include mq(sm){
+        font-size: 35px;
+}
 }
 
 h2 {

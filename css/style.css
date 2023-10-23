@@ -29,6 +29,11 @@ h1 {
   line-height: 75px;
   color: #fff;
 }
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 35px;
+  }
+}
 
 h2 {
   color: #C19D60;
@@ -574,7 +579,8 @@ section.lasttext {
   padding: 40px 0;
 }
 .privacy-policy .content-wrap li {
-  font-size: 17px;
+  font-size: 15px;
+  font-family: "Noah", sans-serif;
 }
 
 .terms {
