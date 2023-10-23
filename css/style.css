@@ -587,7 +587,8 @@ section.lasttext {
   padding: 40px 0;
 }
 .terms .content-wrap li {
-  font-size: 17px;
+  font-size: 15px;
+  font-family: "Noah", sans-serif;
 }
 
 /*privacy-policy end*/
