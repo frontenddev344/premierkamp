@@ -1,0 +1,50 @@
+@import './variables';
+@import './mixins';
+
+li {
+    list-style: none;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: $clr-black;
+    font-family: 'Noah', sans-serif;
+    @include mq(lg){
+            font-size: 13px;
+            line-height: 21px;
+}
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 75px;
+    color: $clr-white;
+}
+
+h2 {
+    color: $clr-mustard;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+    color: $clr-black;
+}
+h4 {
+    font-size: 28px;
+    line-height: 48px;
+    font-weight: 400;
+    color: $clr-white;
+}
