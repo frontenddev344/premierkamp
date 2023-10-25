@@ -664,11 +664,14 @@ section.lasttext {
     transform: translateY(0%);
     transition-delay: 1000ms;
 }
+.card-body h4 {
+    color: $clr-mustard;
+}
 a.btn.btn-primary.accept-cookies {
-    background: pink;
+    background: $clr-mustard;
     padding: 6px 22px;
     font-size: 20px;
-    border: 1px solid pink;
+    border: 1px solid $clr-mustard;
 }
 
 /*cookie end*/

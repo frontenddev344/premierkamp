@@ -341,24 +341,24 @@
   </div>
   <!-- site footer end -->
 
-      <!--cookies start -->
-<div class="card cookie-alert show">
-  <div class="card-body p-5">
-    <h4>COOKIES</h4>
-    <p>Diese Website verwendet Cookies<br>
+  <!--cookies start -->
+  <div class="card cookie-alert show">
+    <div class="card-body p-4">
+      <h4>COOKIES</h4>
+      <p>Diese Website verwendet Cookies<br>
         Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren, Social-Media-Funktionen
         bereitzustellen und unseren Datenverkehr zu analysieren. Wir geben Informationen über Ihre
         Nutzung unserer Website auch an unsere Partner für soziale Medien, Werbung und Analysen
         weiter, die diese möglicherweise mit anderen Informationen kombinieren, die Sie ihnen
         bereitgestellt haben oder die sie im Rahmen Ihrer Nutzung ihrer Dienste gesammelt haben.
-    </p>
+      </p>
       <div class="btn-toolbar justify-content-end">
 
-          <a href="#" class="btn btn-primary accept-cookies">Accept</a>
+        <a href="#" class="btn btn-primary accept-cookies">Accept</a>
       </div>
+    </div>
   </div>
-</div>
-<!--cookies end -->
+  <!--cookies end -->
 
 
   <script src="js/bootstrap.js"></script>
@@ -388,49 +388,49 @@
       });
     });
   </script>
-<script>
-  (function () {
-    "use strict";
- 
-    var cookieAlert = document.querySelector(".cookie-alert");
-    var acceptCookies = document.querySelector(".accept-cookies");
- 
-    cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
- 
-    if (!getCookie("acceptCookies")) {
+  <script>
+    (function () {
+      "use strict";
+
+      var cookieAlert = document.querySelector(".cookie-alert");
+      var acceptCookies = document.querySelector(".accept-cookies");
+
+      cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+
+      if (!getCookie("acceptCookies")) {
         cookieAlert.classList.add("show");
-    }
- 
-    acceptCookies.addEventListener("click", function () {
+      }
+
+      acceptCookies.addEventListener("click", function () {
         setCookie("acceptCookies", true, 60);
         cookieAlert.classList.remove("show");
-    });
- })();
- 
- // Cookie functions stolen from w3schools
- function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
- }
- 
- function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
+      });
+    })();
+
+    // Cookie functions stolen from w3schools
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         while (c.charAt(0) === ' ') {
-            c = c.substring(1);
+          c = c.substring(1);
         }
         if (c.indexOf(name) === 0) {
-            return c.substring(name.length, c.length);
+          return c.substring(name.length, c.length);
         }
+      }
+      return "";
     }
-    return "";
- }
-      </script>
+  </script>
 </body>
 
 </html>

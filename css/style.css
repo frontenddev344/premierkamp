@@ -644,11 +644,15 @@ section.lasttext {
   transition-delay: 1000ms;
 }
 
+.card-body h4 {
+  color: #C19D60;
+}
+
 a.btn.btn-primary.accept-cookies {
-  background: pink;
+  background: #C19D60;
   padding: 6px 22px;
   font-size: 20px;
-  border: 1px solid pink;
+  border: 1px solid #C19D60;
 }
 
 /*cookie end*/
