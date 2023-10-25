@@ -525,6 +525,30 @@ section.lasttext {
 }
 
 /*footer-css-end*/
+/*Hotels-css-start*/
+section.hotels-section {
+  position: relative;
+  height: 500px;
+  background-image: url(../images/hotelsbanner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.hotels-section::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*Hotels-css-start*/
 /*contact-css-start*/
 .content-wrap h4 {
   color: #C19D60;
