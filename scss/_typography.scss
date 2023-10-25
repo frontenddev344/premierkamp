@@ -5,8 +5,18 @@ li {
     list-style: none;
 }
 
-button {
-    font-family: 'Poppins', sans-serif;
+.btn {
+    font-size: 17px;
+    font-weight: 800;
+    background-color: $clr-mustard;
+    border: 1px solid $clr-mustard;
+    color: $clr-white;
+    display: inline-block;
+    padding: 11px 20px;
+    &:hover{
+        background-color: $clr-white;
+        border: 1px solid $clr-mustard;
+    }
 }
 
 p {
