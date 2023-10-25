@@ -28,6 +28,10 @@
     .site-nav li {
         font-size: 15px;
     }
+
+    .content-wrap p {
+        font-size: 14px !important;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -250,6 +254,10 @@
 
     .site-logo img {
         max-width: 95px !important;
+    }
+
+    .content-wrap h4 {
+        font-size: 20px;
     }
 }
 
