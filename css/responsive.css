@@ -161,6 +161,9 @@
   .explore-picture img {
     max-width: 167px;
   }
+  section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:nth-child(3) {
+    margin-top: 16px;
+  }
 }
 @media screen and (max-width: 768px) {
   .explore-head p {
@@ -191,6 +194,9 @@
   }
   .mails-names {
     justify-content: center;
+  }
+  section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:nth-child(2) {
+    margin-top: 16px;
   }
 }
 @media screen and (max-width: 575px) {
