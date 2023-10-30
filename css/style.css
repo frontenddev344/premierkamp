@@ -187,7 +187,39 @@ header.site-header.sticky {
 }
 
 /*header end*/
-/*banner-css-start*/
+/*cookie start*/
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  left: 0;
+}
+
+.cookie-alert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+.card-body h4 {
+  color: #C19D60;
+}
+
+a.btn.btn-primary.accept-cookies {
+  background: #C19D60;
+  padding: 6px 22px;
+  font-size: 20px;
+  border: 1px solid #C19D60;
+}
+
+/*cookie end*/
+/*homebanner-css-start*/
 section.banner-section {
   position: relative;
   height: 500px;
@@ -218,7 +250,7 @@ section.banner-section::after {
   color: #C19D60;
 }
 
-/*banner-css-end*/
+/*homebanner-css-end*/
 /*explore-css-start*/
 section.explore.section {
   padding: 50px 0;
@@ -488,56 +520,6 @@ section.lasttext {
 }
 
 /*lasttext-css-end*/
-/*footer-css-start*/
-.footer {
-  background-color: #0C0B0B;
-  padding: 50px 0;
-}
-.footer-logo {
-  max-width: 124px;
-}
-.footer-links a {
-  color: #fff;
-}
-.footer-links a:hover {
-  color: #C19D60;
-}
-.footer-adresse p {
-  color: #fff;
-}
-.footer-mails a {
-  color: #fff;
-}
-.footer-mails {
-  display: flex;
-  flex-direction: column;
-}
-
-.mails-names {
-  gap: 16px;
-  display: flex;
-  align-items: end;
-}
-
-.social-signals {
-  margin-top: 25px;
-}
-.social-signals i {
-  color: #C19D60;
-  border-radius: 30px;
-  font-size: 25px;
-  margin: 0 10px;
-  border: 1px solid #C19D60;
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 36px;
-}
-.social-signals i:hover {
-  color: #fff;
-}
-
-/*footer-css-end*/
 /*Hotels-css-start*/
 section.hotels-section {
   position: relative;
@@ -647,137 +629,6 @@ section.Page2 .page-wrapper .boxs .page-content-box .page-btn a:hover {
 }
 
 /*Hotels-css-start*/
-/*contact-css-start*/
-.content-wrap h4 {
-  color: #C19D60;
-}
-
-.contact__section {
-  position: relative;
-  height: 350px;
-  background-image: url(../images/contactbanner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-  margin-top: 0;
-  isolation: isolate;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.contact__section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  z-index: -1;
-}
-
-/*contact-css-end*/
-/*privacy-policy start*/
-.privacy__section {
-  position: relative;
-  height: 350px;
-  background-image: url(../images/privacybanner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-  margin-top: 0;
-  isolation: isolate;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.privacy__section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  z-index: -1;
-}
-
-.privacy-policy {
-  padding: 40px 0;
-}
-.privacy-policy .content-wrap li {
-  font-size: 15px;
-  font-family: "Noah", sans-serif;
-}
-
-.terms {
-  padding: 40px 0;
-}
-.terms .content-wrap li {
-  font-size: 15px;
-  font-family: "Noah", sans-serif;
-}
-
-/*privacy-policy end*/
-/*terms-conditon start*/
-.terms__section {
-  position: relative;
-  height: 350px;
-  background-image: url(../images/termsbanner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-  margin-top: 0;
-  isolation: isolate;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.terms__section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  z-index: -1;
-}
-
-/*terms-conditon-end/
-
-/*cookie start*/
-.cookie-alert {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  margin: 0 !important;
-  z-index: 999;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: all 500ms ease-out;
-  left: 0;
-}
-
-.cookie-alert.show {
-  opacity: 1;
-  transform: translateY(0%);
-  transition-delay: 1000ms;
-}
-
-.card-body h4 {
-  color: #C19D60;
-}
-
-a.btn.btn-primary.accept-cookies {
-  background: #C19D60;
-  padding: 6px 22px;
-  font-size: 20px;
-  border: 1px solid #C19D60;
-}
-
-/*cookie end*/
 section.casino-hotels {
   position: relative;
   height: 350px;
@@ -960,6 +811,199 @@ section.budget::after {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+section.konference {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/konferencebanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.konference::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.besthotels {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/besthotelsbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.besthotels::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*contact-css-start*/
+.content-wrap h4 {
+  color: #C19D60;
+}
+
+.contact__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/contactbanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/*contact-css-end*/
+/*privacy-policy start*/
+.privacy__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/privacybanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.privacy__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.privacy-policy {
+  padding: 40px 0;
+}
+.privacy-policy .content-wrap li {
+  font-size: 15px;
+  font-family: "Noah", sans-serif;
+}
+
+.terms {
+  padding: 40px 0;
+}
+.terms .content-wrap li {
+  font-size: 15px;
+  font-family: "Noah", sans-serif;
+}
+
+/*privacy-policy end*/
+/*terms-conditon start*/
+.terms__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/termsbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.terms__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/*terms-conditon-end/
+
+/*footer-css-start*/
+.footer {
+  background-color: #0C0B0B;
+  padding: 50px 0;
+}
+.footer-logo {
+  max-width: 124px;
+}
+.footer-links a {
+  color: #fff;
+}
+.footer-links a:hover {
+  color: #C19D60;
+}
+.footer-adresse p {
+  color: #fff;
+}
+.footer-mails a {
+  color: #fff;
+}
+.footer-mails {
+  display: flex;
+  flex-direction: column;
+}
+
+.mails-names {
+  gap: 16px;
+  display: flex;
+  align-items: end;
+}
+
+.social-signals {
+  margin-top: 25px;
+}
+.social-signals i {
+  color: #C19D60;
+  border-radius: 30px;
+  font-size: 25px;
+  margin: 0 10px;
+  border: 1px solid #C19D60;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 36px;
+}
+.social-signals i:hover {
+  color: #fff;
+}
+
+/*footer-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */

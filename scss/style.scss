@@ -124,7 +124,41 @@ header.site-header.sticky {
 
 /*header end*/
 
-/*banner-css-start*/
+
+/*cookie start*/
+.cookie-alert {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    left: 0;
+}
+
+.cookie-alert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.card-body h4 {
+    color: $clr-mustard;
+}
+
+a.btn.btn-primary.accept-cookies {
+    background: $clr-mustard;
+    padding: 6px 22px;
+    font-size: 20px;
+    border: 1px solid $clr-mustard;
+}
+
+/*cookie end*/
+
+/*homebanner-css-start*/
 section.banner-section {
     position: relative;
     height: 500px;
@@ -157,7 +191,7 @@ section.banner-section {
     }
 }
 
-/*banner-css-end*/
+/*homebanner-css-end*/
 
 /*explore-css-start*/
 section.explore.section {
@@ -472,71 +506,6 @@ section.lasttext {
 
 /*lasttext-css-end*/
 
-/*footer-css-start*/
-.footer {
-    background-color: $clr-black;
-    padding: 50px 0;
-
-    &-logo {
-        max-width: 124px;
-    }
-
-    &-links {
-        a {
-            color: $clr-white;
-
-            &:hover {
-                color: $clr-mustard;
-            }
-        }
-    }
-
-    &-adresse {
-        p {
-            color: $clr-white;
-        }
-    }
-
-    &-mails {
-        a {
-            color: $clr-white;
-        }
-    }
-
-    &-mails {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.mails-names {
-    gap: 16px;
-    display: flex;
-    align-items: end;
-}
-
-.social-signals {
-    margin-top: 25px;
-
-    i {
-        color: $clr-mustard;
-        border-radius: 30px;
-        font-size: 25px;
-        margin: 0 10px;
-        border: 1px solid $clr-mustard;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-        line-height: 36px;
-
-        &:hover {
-            color: $clr-white;
-        }
-    }
-}
-
-/*footer-css-end*/
-
 /*Hotels-css-start*/
 section.hotels-section {
     position: relative;
@@ -674,6 +643,265 @@ section.Page2 {
 
 /*Hotels-css-start*/
 
+// casino-hotel-css-start// 
+section.casino-hotels {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/casinohotelbanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+// casino-hotel-css-end// 
+
+// eco-friendly-css-start// 
+section.ecofriendly {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/ecofriendlybanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.section-title.two {
+    h1 {
+        color: $clr-black;
+    }
+
+    h2 {
+        color: $clr-mustard;
+    }
+}
+
+
+.facilities-area .section-title {
+    margin-bottom: 51px;
+}
+
+.facilities-area .luxury-button {
+    text-align: right;
+    margin-top: 0;
+}
+
+.facilities-area .luxury-button:before {
+    right: -295px;
+    background: $clr-black;
+}
+
+.facilities-area .luxury-button a {
+    color: $clr-black;
+    border: 1px solid $clr-black;
+    background: transparent;
+}
+
+.facilities-area .luxury-button a:before {
+    background: $clr-black;
+}
+
+.facilities-area .luxury-button a:hover {
+    color: $clr-white;
+}
+
+.facilities-area .row.add-boder {
+    border-top: 1px solid #61616142;
+    padding: 39px 0;
+}
+
+.single-facilities-box {
+    position: relative;
+    margin-left: 107px;
+}
+
+.single-facilities-box.two {
+    margin: 0;
+    margin-right: 100px;
+}
+
+.facilities-content {
+    h4 {
+        font-size: 16px;
+        line-height: 50px;
+        color: $clr-mustard;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-size: 32px;
+        line-height: 26px;
+        color: $clr-black;
+        font-weight: 600;
+    }
+
+    p {
+        margin-top: 46px;
+        position: relative;
+        margin-bottom: 40px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 30px;
+            left: 0;
+            top: -35px;
+            background: #61616159;
+        }
+    }
+
+}
+
+a.facilities-button i {
+    display: inline-block;
+    color: $clr-black;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+img.rightarrow {
+    width: 40px;
+    transition: .3s;
+
+    &:hover {
+        filter: invert(79%) sepia(30%) saturate(531%) hue-rotate(351deg) brightness(78%) contrast(92%);
+        margin-left: 10px;
+    }
+}
+
+a.facilities-button i:hover {
+    color: $clr-mustard;
+}
+
+.facilities-number {
+    position: absolute;
+    left: -21%;
+    top: -18px;
+}
+
+.facilities-number.two {
+    position: absolute;
+    left: 111%;
+    top: -18px;
+}
+
+.facilities-number h1 {
+    font-size: 40px;
+    color: $clr-mustard;
+    font-weight: 500;
+}
+
+
+// eco-friendly-css-end// 
+
+// budget-css-start// 
+section.budget {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/budgetbanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+// budget-css-end// 
+
+// konference-css-start// 
+section.konference {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/konferencebanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+// konference-css-end//     
+
+
+// besthotels-css-start// 
+section.besthotels {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/besthotelsbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+// besthotels-css-end//    
+
 /*contact-css-start*/
 .content-wrap h4 {
     color: $clr-mustard;
@@ -785,239 +1013,69 @@ section.Page2 {
 
 /*terms-conditon-end/
 
-/*cookie start*/
-.cookie-alert {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    margin: 0 !important;
-    z-index: 999;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: all 500ms ease-out;
-    left: 0;
-}
+/*footer-css-start*/
+.footer {
+    background-color: $clr-black;
+    padding: 50px 0;
 
-.cookie-alert.show {
-    opacity: 1;
-    transform: translateY(0%);
-    transition-delay: 1000ms;
-}
-
-.card-body h4 {
-    color: $clr-mustard;
-}
-
-a.btn.btn-primary.accept-cookies {
-    background: $clr-mustard;
-    padding: 6px 22px;
-    font-size: 20px;
-    border: 1px solid $clr-mustard;
-}
-
-/*cookie end*/
-
-
-// casino-hotel-css-start// 
-section.casino-hotels {
-    position: relative;
-    height: 350px;
-    background-image: url(../images/casinohotelbanner.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    &::after {
-        position: absolute;
-        inset: 0;
-        content: '';
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-}
-
-// casino-hotel-css-end// 
-
-// eco-friendly-css-start// 
-section.ecofriendly {
-    position: relative;
-    height: 350px;
-    background-image: url(../images/ecofriendlybanner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    &::after {
-        position: absolute;
-        inset: 0;
-        content: '';
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-}
-.section-title.two {
-    h1 {
-        color: $clr-black;
+    &-logo {
+        max-width: 124px;
     }
 
-    h2 {
-        color: $clr-mustard;
-    }
-}
+    &-links {
+        a {
+            color: $clr-white;
 
-
-.facilities-area .section-title {
-    margin-bottom: 51px;
-}
-
-.facilities-area .luxury-button {
-    text-align: right;
-    margin-top: 0;
-}
-
-.facilities-area .luxury-button:before {
-    right: -295px;
-    background: $clr-black;
-}
-
-.facilities-area .luxury-button a {
-    color: $clr-black;
-    border: 1px solid $clr-black;
-    background: transparent;
-}
-
-.facilities-area .luxury-button a:before {
-    background: $clr-black;
-}
-
-.facilities-area .luxury-button a:hover {
-    color: $clr-white;
-}
-
-.facilities-area .row.add-boder {
-    border-top: 1px solid #61616142;
-    padding: 39px 0;
-}
-
-.single-facilities-box {
-    position: relative;
-    margin-left: 107px;
-}
-
-.single-facilities-box.two {
-    margin: 0;
-    margin-right: 100px;
-}
-
-.facilities-content {
-    h4 {
-        font-size: 16px;
-        line-height: 50px;
-        color: $clr-mustard;
-        font-weight: 900;
-        text-transform: uppercase;
-    }
-
-    h5 {
-        font-size: 32px;
-        line-height: 26px;
-        color: $clr-black;
-        font-weight: 600;
-    }
-
-    p {
-        margin-top: 46px;
-        position: relative;
-        margin-bottom: 40px;
-
-        &::before {
-            position: absolute;
-            content: "";
-            width: 1px;
-            height: 30px;
-            left: 0;
-            top: -35px;
-            background: #61616159;
+            &:hover {
+                color: $clr-mustard;
+            }
         }
     }
 
-}
+    &-adresse {
+        p {
+            color: $clr-white;
+        }
+    }
 
-a.facilities-button i {
-    display: inline-block;
-    color: $clr-black;
-    font-size: 18px;
-    transition: 0.5s;
-}
-img.rightarrow {
-    width: 40px;
-    transition: .3s;
-    &:hover{
-        filter: invert(79%) sepia(30%) saturate(531%) hue-rotate(351deg) brightness(78%) contrast(92%);
-        margin-left: 10px;
+    &-mails {
+        a {
+            color: $clr-white;
+        }
+    }
+
+    &-mails {
+        display: flex;
+        flex-direction: column;
     }
 }
-a.facilities-button i:hover {
-    color: $clr-mustard;
-}
 
-.facilities-number {
-    position: absolute;
-    left: -21%;
-    top: -18px;
-}
-
-.facilities-number.two {
-    position: absolute;
-    left: 111%;
-    top: -18px;
-}
-
-.facilities-number h1 {
-    font-size: 40px;
-    color: $clr-mustard;
-    font-weight: 500;
-}
-
-
-// eco-friendly-css-end// 
-
-// budget-css-start// 
-section.budget {
-    position: relative;
-    height: 350px;
-    background-image: url(../images/budgetbanner.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-    margin-top: 0;
+.mails-names {
+    gap: 16px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: end;
+}
 
-    &::after {
-        position: absolute;
-        inset: 0;
-        content: '';
-        background-color: rgba(0, 0, 0, 0.5);
+.social-signals {
+    margin-top: 25px;
+
+    i {
+        color: $clr-mustard;
+        border-radius: 30px;
+        font-size: 25px;
+        margin: 0 10px;
+        border: 1px solid $clr-mustard;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 36px;
+
+        &:hover {
+            color: $clr-white;
+        }
     }
 }
 
-// budget-css-end// 
+/*footer-css-end*/
+
 /*# sourceMappingURL=style.css.map */
