@@ -819,11 +819,11 @@ a.btn.btn-primary.accept-cookies {
 /*cookie end*/
 
 
-// Abroad-css-start// 
-section.abroad {
+// casino-hotel-css-start// 
+section.casino-hotels {
     position: relative;
     height: 350px;
-    background-image: url(../images/abroadbanner.jpg);
+    background-image: url(../images/casinohotelbanner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -843,13 +843,13 @@ section.abroad {
     }
 }
 
-// Abroad-css-end// 
+// casino-hotel-css-end// 
 
-// budget-css-start// 
-section.budget {
+// eco-friendly-css-start// 
+section.ecofriendly {
     position: relative;
     height: 350px;
-    background-image: url(../images/budgetbanner.jpeg);
+    background-image: url(../images/ecofriendlybanner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -868,7 +868,6 @@ section.budget {
         background-color: rgba(0, 0, 0, 0.5);
     }
 }
-
 .section-title.two {
     h1 {
         color: $clr-black;
@@ -991,6 +990,33 @@ a.facilities-button i:hover {
     font-size: 40px;
     color: $clr-mustard;
     font-weight: 500;
+}
+
+
+// eco-friendly-css-end// 
+
+// budget-css-start// 
+section.budget {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/budgetbanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }
 
 // budget-css-end// 
