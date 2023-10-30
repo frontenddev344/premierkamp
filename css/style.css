@@ -799,6 +799,28 @@ section.abroad::after {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+section.budget {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/budgetbanner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.budget::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
 
 
 /*# sourceMappingURL=style.css.map */

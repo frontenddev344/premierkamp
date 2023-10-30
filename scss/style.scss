@@ -843,4 +843,30 @@ section.abroad {
 }
 
 // Abroad-css-end// 
+
+// budget-css-start// 
+section.budget {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/budgetbanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.55);
+    }
+}
+
+// budget-css-end// 
 /*# sourceMappingURL=style.css.map */
