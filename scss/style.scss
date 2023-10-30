@@ -891,21 +891,21 @@ section.budget {
 
 .facilities-area .luxury-button:before {
     right: -295px;
-    background: #1E1E1E;
+    background: $clr-black;
 }
 
 .facilities-area .luxury-button a {
-    color: #1E1E1E;
-    border: 1px solid #1E1E1E;
+    color: $clr-black;
+    border: 1px solid $clr-black;
     background: transparent;
 }
 
 .facilities-area .luxury-button a:before {
-    background: #1E1E1E;
+    background: $clr-black;
 }
 
 .facilities-area .luxury-button a:hover {
-    color: #fff;
+    color: $clr-white;
 }
 
 .facilities-area .row.add-boder {
@@ -928,7 +928,7 @@ section.budget {
     h4 {
         font-size: 16px;
         line-height: 26px;
-        color: #c19d68;
+        color: $clr-mustard;
         font-weight: 900;
         text-transform: uppercase;
     }
@@ -936,7 +936,7 @@ section.budget {
     h5 {
         font-size: 32px;
         line-height: 26px;
-        color: #1e1e1e;
+        color: $clr-black;
         font-weight: 600;
     }
 
@@ -960,13 +960,20 @@ section.budget {
 
 a.facilities-button i {
     display: inline-block;
-    color: #616161;
-    font-size: 25px;
+    color: $clr-black;
+    font-size: 18px;
     transition: 0.5s;
 }
-
+img.rightarrow {
+    width: 40px;
+    transition: .3s;
+    &:hover{
+        filter: invert(79%) sepia(30%) saturate(531%) hue-rotate(351deg) brightness(78%) contrast(92%);
+        margin-left: 10px;
+    }
+}
 a.facilities-button i:hover {
-    color: #c19d68;
+    color: $clr-mustard;
 }
 
 .facilities-number {
@@ -983,7 +990,7 @@ a.facilities-button i:hover {
 
 .facilities-number h1 {
     font-size: 40px;
-    color: #c19d68;
+    color: $clr-mustard;
     font-weight: 500;
 }
 
