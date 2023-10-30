@@ -881,7 +881,7 @@ section.budget::after {
   text-transform: uppercase;
 }
 
-.facilities-content h1 {
+.facilities-content h5 {
   font-size: 32px;
   line-height: 26px;
   color: #1e1e1e;
