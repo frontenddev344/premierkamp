@@ -13,6 +13,12 @@
   .site-nav li {
     font-size: 16px;
   }
+  .cuisine__part {
+    padding-left: 20px;
+  }
+  .item {
+    aspect-ratio: 1/0.6;
+  }
 }
 @media screen and (max-width: 1024px) {
   .site-nav a {
@@ -24,6 +30,13 @@
   }
   .content-wrap p {
     font-size: 14px !important;
+  }
+  .item {
+    aspect-ratio: 1/0.7;
+  }
+  section.Page2 .page-wrapper .boxs .page-content-box h3 {
+    font-size: 19px;
+    line-height: 31px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -176,6 +189,9 @@
 @media screen and (max-width: 767px) {
   .explore-head {
     margin-top: 15px;
+  }
+  .item {
+    aspect-ratio: auto;
   }
   .cuisine__part p {
     max-width: 85%;

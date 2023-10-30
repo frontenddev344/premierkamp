@@ -17,6 +17,12 @@
     .site-nav li {
         font-size: 16px;
     }
+    .cuisine__part{
+        padding-left: 20px;
+    }
+    .item {
+        aspect-ratio: 1/0.6;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -31,6 +37,13 @@
 
     .content-wrap p {
         font-size: 14px !important;
+    }
+    .item {
+        aspect-ratio: 1/0.7;
+    }
+    section.Page2 .page-wrapper .boxs .page-content-box h3 {
+        font-size: 19px;
+        line-height: 31px;
     }
 }
 
@@ -206,16 +219,6 @@
     section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:nth-child(3) {
         margin-top: 16px;
     }
-
-
-
-
-
-
-
-
-
-
 }
 
 @media screen and (max-width:768px) {
@@ -232,7 +235,9 @@
     .explore-head {
         margin-top: 15px;
     }
-
+    .item {
+        aspect-ratio: auto;
+    }
     .cuisine__part p {
         max-width: 85%;
     }
