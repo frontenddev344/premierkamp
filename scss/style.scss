@@ -3,7 +3,7 @@
 @import 'variables';
 @import 'typography';
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
@@ -15,7 +15,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-size: 1.6rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 ul {
@@ -91,6 +91,7 @@ header.site-header.sticky {
     padding: 8px 12px !important;
     display: inline-block;
     font-size: 16px;
+    font-weight: 700;
     color: $clr-white;
 
     &:hover {
@@ -624,7 +625,7 @@ section.Page2 {
 
                 h3 {
                     color: $clr-mustard;
-                    font-weight: 600;
+                    font-weight: 700;
                     font-size: 22px;
                     letter-spacing: 3px;
                     line-height: 26px;
