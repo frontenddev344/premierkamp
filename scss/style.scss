@@ -873,6 +873,58 @@ section.konference {
     }
 }
 
+
+.konference-text h5 {
+    color: $clr-mustard;
+    font-size: 25px;
+}
+
+.page-btn a {
+    display: inline-block;
+    margin: 10px 0;
+    background: $clr-mustard;
+    color: $clr-white;
+    padding: 10px 40px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid $clr-mustard;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: $clr-mustard;
+        background-color: transparent;
+        border: 1px solid $clr-mustard;
+    }
+}
+
+.konference {
+    &-text {
+        padding: 30px 0;
+        max-width: 450px;
+
+    }
+
+    &-picture img {
+        border-radius: 10px;
+        max-width: 450px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    &-main {
+        height: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background: #fff;
+        position: relative;
+        padding-bottom: 60px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+.cuisine__main.konferanse {
+    padding: 0;
+}
+
 // konference-css-end//     
 
 

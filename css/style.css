@@ -833,6 +833,52 @@ section.konference::after {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.konference-text h5 {
+  color: #C19D60;
+  font-size: 25px;
+}
+
+.page-btn a {
+  display: inline-block;
+  margin: 10px 0;
+  background: #C19D60;
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #C19D60;
+  transition: all 0.3s ease-in-out;
+}
+.page-btn a:hover {
+  color: #C19D60;
+  background-color: transparent;
+  border: 1px solid #C19D60;
+}
+
+.konference-text {
+  padding: 30px 0;
+  max-width: 450px;
+}
+.konference-picture img {
+  border-radius: 10px;
+  max-width: 450px;
+  height: 350px;
+  object-fit: cover;
+}
+.konference-main {
+  height: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #fff;
+  position: relative;
+  padding-bottom: 60px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cuisine__main.konferanse {
+  padding: 0;
+}
+
 section.besthotels {
   position: relative;
   height: 350px;
