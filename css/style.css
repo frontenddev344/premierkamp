@@ -263,13 +263,15 @@ section.choose-main {
 .item {
   background: #fdfbf8;
   padding: 40px 20px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   position: relative;
+  aspect-ratio: 1/0.5;
   z-index: 1;
   margin-bottom: 30px;
   line-height: 1;
   text-align: center;
+  height: auto;
+  width: 100%;
 }
 .item img {
   max-width: 64px;
