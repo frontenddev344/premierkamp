@@ -859,8 +859,7 @@ section.budget::after {
 
 .facilities-area .row.add-boder {
   border-top: 1px solid rgba(97, 97, 97, 0.2588235294);
-  padding-top: 39px;
-  padding-bottom: 38px;
+  padding: 39px 0;
 }
 
 .single-facilities-box {
