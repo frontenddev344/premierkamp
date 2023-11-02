@@ -17,9 +17,11 @@
     .site-nav li {
         font-size: 16px;
     }
-    .cuisine__part{
+
+    .cuisine__part {
         padding-left: 20px;
     }
+
     .item {
         aspect-ratio: 1/0.6;
     }
@@ -38,9 +40,11 @@
     .content-wrap p {
         font-size: 14px !important;
     }
+
     .item {
         aspect-ratio: 1/0.7;
     }
+
     section.Page2 .page-wrapper .boxs .page-content-box h3 {
         font-size: 19px;
         line-height: 31px;
@@ -221,6 +225,25 @@
     }
 }
 
+@media screen and (max-width:820px) {
+    .facilities-thumb img.img-fluid {
+        height: 350px !important;
+        object-fit: cover;
+    }
+
+    .facilities-content h5 {
+        line-height: 35px;
+    }
+
+    .facilities-content h4 {
+        line-height: 22px;
+    }
+
+    .item {
+        aspect-ratio: 1;
+    }
+}
+
 @media screen and (max-width:768px) {
     .explore-head p {
         max-width: 90%;
@@ -229,29 +252,29 @@
     .item p {
         max-width: 100%;
     }
+
     .facilities-content {
-    h4 {
-        font-size: 15px;
-        line-height: 17px;
+        h4 {
+            font-size: 15px;
+            line-height: 17px;
+        }
+
+        h5 {
+            font-size: 28px;
+            line-height: 26px;
+        }
     }
- h5 {
-        font-size: 28px;
-        line-height: 26px;
-    }
-} 
-.facilities-thumb img.img-fluid {
-    height: 350px!important;
-    object-fit: cover;
-}
 }
 
 @media screen and (max-width:767px) {
     .explore-head {
         margin-top: 15px;
     }
+
     .item {
         aspect-ratio: auto;
     }
+
     .cuisine__part p {
         max-width: 85%;
     }
@@ -275,12 +298,15 @@
     .mails-names {
         justify-content: center;
     }
+
     section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:nth-child(2) {
         margin-top: 16px;
     }
+
     .facilities-number h1 {
         padding-left: 25px;
     }
+
     .facilities-content {
         margin-top: 30px;
     }
@@ -302,13 +328,16 @@
     .content-wrap h4 {
         font-size: 20px;
     }
+
     .facilities-number {
         display: none;
     }
+
     .single-facilities-box {
         margin-left: 0;
     }
-    .single-facilities-box.two{
+
+    .single-facilities-box.two {
         margin: 0;
     }
 }
