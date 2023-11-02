@@ -217,6 +217,11 @@ a.btn.btn-primary.accept-cookies {
   font-size: 20px;
   border: 1px solid #C19D60;
 }
+a.btn.btn-primary.accept-cookies:hover {
+  background-color: transparent;
+  border: 1px solid #C19D60;
+  color: #C19D60;
+}
 
 /*cookie end*/
 /*homebanner-css-start*/

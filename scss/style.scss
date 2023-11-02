@@ -154,6 +154,12 @@ a.btn.btn-primary.accept-cookies {
     padding: 6px 22px;
     font-size: 20px;
     border: 1px solid $clr-mustard;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $clr-mustard;
+        color: $clr-mustard;
+    }
 }
 
 /*cookie end*/
@@ -921,6 +927,7 @@ section.konference {
         transition: all 0.3s ease-in-out;
     }
 }
+
 .cuisine__main.konferanse {
     padding: 0;
 }
