@@ -154,6 +154,7 @@ a.btn.btn-primary.accept-cookies {
     padding: 6px 22px;
     font-size: 20px;
     border: 1px solid $clr-mustard;
+    text-transform: capitalize;
 
     &:hover {
         background-color: transparent;

@@ -216,6 +216,7 @@ a.btn.btn-primary.accept-cookies {
   padding: 6px 22px;
   font-size: 20px;
   border: 1px solid #C19D60;
+  text-transform: capitalize;
 }
 a.btn.btn-primary.accept-cookies:hover {
   background-color: transparent;
