@@ -172,7 +172,7 @@
     opacity: 0.7;
   }
   .explore-picture img {
-    max-width: 167px;
+    max-width: 100%;
   }
   section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:nth-child(3) {
     margin-top: 16px;
