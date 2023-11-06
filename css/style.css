@@ -530,6 +530,10 @@ section.lasttext {
   padding: 50px 0;
 }
 
+.lasttext-content {
+  box-shadow: 0 0 10px 0 #C19D60;
+  padding: 20px;
+}
 .lasttext-content h3 {
   color: #C19D60;
 }

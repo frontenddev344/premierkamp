@@ -514,6 +514,8 @@ section.lasttext {
 
 .lasttext {
     &-content {
+        box-shadow: 0 0 10px 0 $clr-mustard;
+        padding: 20px;
         h3 {
             color: $clr-mustard;
         }
