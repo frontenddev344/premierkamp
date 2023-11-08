@@ -712,13 +712,13 @@ section.casino-hotels::after {
 
 .resturent-button a {
   display: block;
-  width: 137px;
+  width: 126px;
   background: #1b212f;
   text-align: center;
   color: #fff;
-  height: 55px;
-  line-height: 55px;
-  font-size: 20px;
+  height: 53px;
+  line-height: 53px;
+  font-size: 19px;
   border-radius: 5px;
 }
 .resturent-button a:hover {
