@@ -710,12 +710,16 @@ section.casino-hotels {
 }
 
 .restaurent-text {
-    max-width: 60%;
-    margin-left: 51px;
-    h4{
+    max-width: 100%;
+    margin-left: 0;
+    padding: 0 40px;
+    width: 100%;
+
+    h4 {
         color: $clr-mustard;
     }
-    p{
+
+    p {
         font-size: 17px;
         color: $clr-darkblue;
     }
@@ -785,7 +789,7 @@ section.casino-hotels {
 }
 
 .faq-section {
-   padding: 50px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 .faq-answer {
@@ -1399,7 +1403,3 @@ button.submit-btn {
 /*footer-css-end*/
 
 /*# sourceMappingURL=style.css.map */
-
-
-
-

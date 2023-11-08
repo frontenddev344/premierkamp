@@ -691,8 +691,10 @@ section.casino-hotels::after {
 }
 
 .restaurent-text {
-  max-width: 60%;
-  margin-left: 51px;
+  max-width: 100%;
+  margin-left: 0;
+  padding: 0 40px;
+  width: 100%;
 }
 .restaurent-text h4 {
   color: #C19D60;
