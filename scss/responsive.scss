@@ -254,6 +254,10 @@
 }
 
 @media screen and (max-width:768px) {
+    .about_us_content {
+        width: 100%;
+    }
+    
     .explore-head p {
         max-width: 90%;
     }
