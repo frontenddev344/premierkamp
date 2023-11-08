@@ -675,6 +675,7 @@ section.casino-hotels::after {
   display: flex;
   align-items: center;
   background: #fff;
+  justify-content: space-between;
   border: 2px solid #1b212f;
   padding: 23px;
   border-radius: 4px;
@@ -690,7 +691,7 @@ section.casino-hotels::after {
 }
 
 .restaurent-text {
-  max-width: 58%;
+  max-width: 60%;
   margin-left: 51px;
 }
 .restaurent-text h4 {
@@ -703,7 +704,7 @@ section.casino-hotels::after {
 
 .resturent-button {
   width: 100%;
-  max-width: 12%;
+  max-width: 10%;
   margin-left: 20px;
 }
 

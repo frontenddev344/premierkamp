@@ -693,6 +693,7 @@ section.casino-hotels {
     display: flex;
     align-items: center;
     background: #fff;
+    justify-content: space-between;
     border: 2px solid $clr-darkblue;
     padding: 23px;
     border-radius: 4px;
@@ -709,7 +710,7 @@ section.casino-hotels {
 }
 
 .restaurent-text {
-    max-width: 58%;
+    max-width: 60%;
     margin-left: 51px;
     h4{
         color: $clr-mustard;
@@ -723,7 +724,7 @@ section.casino-hotels {
 
 .resturent-button {
     width: 100%;
-    max-width: 12%;
+    max-width: 10%;
     margin-left: 20px;
 }
 
@@ -1398,3 +1399,7 @@ button.submit-btn {
 /*footer-css-end*/
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
