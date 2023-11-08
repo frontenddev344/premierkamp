@@ -31,7 +31,8 @@ img {
 a {
     text-decoration: none;
     color: inherit;
-    &:hover{
+
+    &:hover {
         color: inherit;
     }
 }
@@ -337,7 +338,8 @@ section.cuisine__main {
 
 .row.cuisine {
     margin: 30px 0;
-    &:last-of-type{
+
+    &:last-of-type {
         margin-bottom: 0;
     }
 }
@@ -516,6 +518,7 @@ section.link {
     &-content {
         box-shadow: 0 0 10px 0 $clr-mustard;
         padding: 20px;
+
         h3 {
             color: $clr-mustard;
         }
@@ -684,7 +687,73 @@ section.casino-hotels {
         background-color: rgba(0, 0, 0, 0.5);
     }
 }
+/*Start Faq css*/
+.faq-page {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.casino-text.hoteli {
+    padding: 0 0 50px 0 !important;
+}
+
+.faq-item {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    font-size: 18px;
+    line-height: 25px;
+    color: $clr-mustard;
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+}
+
+.faq-section {
+   padding: 50px 0 0 0;
+}
+
+.faq-answer {
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    p {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.faq-answer.active {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.icon-container i {
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-container i.active {
+    transform: rotate(90deg);
+}
+
+/*End Faq css*/
 // casino-hotel-css-end// 
 
 // eco-friendly-css-start// 
@@ -753,7 +822,8 @@ section.ecofriendly {
 .facilities-area .row.add-boder {
     border-top: 1px solid #61616142;
     padding: 39px 0;
-    &:last-of-type{
+
+    &:last-of-type {
         padding-bottom: 0;
     }
 }
@@ -977,6 +1047,100 @@ section.besthotels {
 // besthotels-css-end//    
 
 /*contact-css-start*/
+
+section.contact__banner {
+    position: relative;
+    height: 300px;
+    background-image: url(../images/contactbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 90px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background-color: rgb(0 0 0 / 45%);
+        height: 100%;
+        z-index: 0;
+    }
+}
+
+.contact {
+    &__content {
+        span {
+            color: $clr-black;
+            font-size: 18px;
+        }
+    }
+}
+
+.about_us_content {
+    background-color: $clr-white;
+    padding: 2rem;
+    margin: 30px 0;
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.input-control {
+    display: block;
+    width: 100%;
+    height: 4rem;
+    border: 1px solid $clr-black;
+    padding: 2rem 2rem;
+    background: transparent;
+    color: $clr-black;
+}
+
+textarea.input-control {
+    resize: none;
+    height: auto;
+}
+
+.form-group .submit-btn {
+    background: transparent;
+    border: 1px solid $clr-black;
+    transition: all 0.2s linear;
+    display: inline-block;
+    padding: 0.8rem 4rem;
+    color: $clr-white;
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: $clr-black;
+    }
+}
+
+.input-control:focus-visible {
+    outline: none;
+}
+
+.form-group label {
+    display: inline-block;
+    padding-bottom: 5px;
+    color: $clr-mustard;
+    transition: all 0.2s linear;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+button.submit-btn {
+    color: $clr-black !important;
+
+    &:hover {
+        background-color: $clr-mustard !important;
+        border-color: $clr-mustard !important;
+        color: $clr-white !important;
+    }
+
+}
+
 .content-wrap h4 {
     color: $clr-mustard;
 }
@@ -1154,17 +1318,21 @@ section.besthotels {
     border-top: 1px solid #fff;
     padding: 10px;
     margin: 30px 0;
-     p {
-       
+
+    p {
+
         text-align: center;
-        a{
+
+        a {
             color: #fff;
-            &:hover{
+
+            &:hover {
                 color: $clr-mustard;
             }
         }
     }
 }
+
 /*footer-css-end*/
 
 /*# sourceMappingURL=style.css.map */
