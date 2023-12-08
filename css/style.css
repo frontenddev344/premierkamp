@@ -1297,6 +1297,152 @@ button.submit-btn:hover {
   color: #C19D60;
 }
 
+/* mobile-view-design */
+.mobile-view-design {
+  margin-top: 115px !important;
+}
+
+.bating-brand-image {
+  width: 50%;
+  text-align: center;
+}
+
+.bating-brand-text {
+  width: 50%;
+  text-align: center;
+}
+
+.bating-brand-mobile {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 27px;
+  padding-top: 27px;
+  padding-left: 4px;
+  padding-bottom: 27px;
+  padding-right: 6px;
+  border-bottom: 2px solid #C19D60;
+  height: 100%;
+}
+
+.bating-brand-text h6 {
+  font-size: 24px;
+  padding: 2px 2px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+a.sign-up {
+  background: #C19D60;
+  color: #fff;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  width: 100%;
+  max-width: 150px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.main-rate-star {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+p.rated-star {
+  padding-left: 6px;
+}
+
+p.rating-text {
+  padding-bottom: 4px !important;
+  margin: 0px !important;
+  margin-top: 13px !important;
+  color: #000;
+  font-size: 16px !important;
+}
+
+i.fa.fa-star {
+  color: #fab451;
+}
+
+p.rate-now {
+  margin-bottom: 6px !important;
+  color: #000;
+  font-size: 16px;
+}
+
+.bating-brand-text p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 29px;
+  color: #000;
+  padding: 0px 10px;
+}
+
+h1.beste {
+  color: #C19D60;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.mobile-text-end p {
+  color: #000;
+  padding: 0px 30px;
+  text-align: center;
+  margin: 31px 0px;
+}
+
+.mobile-view-design img {
+  width: 100%;
+}
+
+/*  */
+.bouns {
+  border-bottom: 2px solid #C19D60;
+  padding-bottom: 27px;
+  margin-bottom: 27px;
+  border-radius: 10px;
+}
+
+.bouns p {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.bouns .bating-brand-mobile {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.mobile-view-design {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .mobile-view-design {
+    display: block !important;
+  }
+  .desktop-view-setion {
+    display: none;
+  }
+  header.site-header {
+    background: black;
+  }
+}
 /*footer-css-end*/
 
 
